@@ -1,11 +1,11 @@
 import React from "react";
 
 
-function Button(props){
+function Button({buttonType, isDisabled, clickHandler, children}){
     return (
-        <button> {props.text};
+        <button type={buttonType} disabled={isDisabled} onClick={clickHandler}> {children}
         </button>
-    )
+    );
 }
 
 export default Button

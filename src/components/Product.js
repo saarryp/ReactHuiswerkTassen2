@@ -1,13 +1,14 @@
 import React from 'react';
 
-function Product(props) {
+
+function Product({typeOfSell, img, title,  typeOfBag, priceOfBag}) {
 
     return (
         <article>
-            <span></span>
-             <img/>
-            <p></p>
-             <h4></h4>
+            <span>{typeOfSell}</span>
+            <img src={img} alt={title}/>
+            <p>{typeOfBag}</p>
+            <h4>€{priceOfBag}</h4>
         </article>
     )
 }
